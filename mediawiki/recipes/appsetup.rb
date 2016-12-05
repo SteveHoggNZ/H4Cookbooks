@@ -13,8 +13,8 @@ Location: Auckland, New Zealand." > humans.txt
     EOH
   end
 
-  template "#{deploy[:deploy_to]}/current/db-connect.php" do
-    source "db-connect.php.erb"
+  template "#{deploy[:deploy_to]}/current/LocalSettings.php" do
+    source "LocalSettings.php.erb"
     mode 0660
     group deploy[:group]
 
