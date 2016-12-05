@@ -5,7 +5,11 @@ node[:deploy].each do |app_name, deploy|
     user "root"
     cwd "#{deploy[:deploy_to]}/current"
     code <<-EOH
-    echo "Steve" > humans.txt
+    echo "/* TEAM */
+Interpretive Dance Coach: Steve Hogg.
+Site: h4.nz
+Twitter: @twit
+Location: Auckland, New Zealand." > humans.txt
     EOH
   end
 

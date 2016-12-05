@@ -1,1 +1,1 @@
-default[:mediawiki][:dbtable] = 'mymediawiki'
+default[:mediawiki][:checktable] = 'user'
