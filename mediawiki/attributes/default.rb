@@ -1,0 +1,1 @@
+default[:mediawiki][:dbtable] = 'mymediawiki'
