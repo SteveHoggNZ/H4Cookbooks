@@ -11,7 +11,9 @@ node[:deploy].each do |app_name, deploy|
     end
 
     variables(
-      :layers => node[:opsworks][:layers]
+      :layers => node[:opsworks][:layers],
+      :customStack => node[:CustomStack],
+      :customLayer => node[:CustomLayer]
     )
 
    only_if do

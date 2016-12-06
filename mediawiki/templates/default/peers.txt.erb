@@ -1,1 +1,3 @@
 <%= @layers.map {|layer_short_name, layer| "#{layer_short_name}: #{layer['instances'].values.map {|instance| "'#{instance['private_ip']}'"}.join(', ') }"}.join('; ') %>
+customStack: <%= #{customStack} %>
+customLayer: <%= #{customLayer} %>
